@@ -1,0 +1,60 @@
+{
+    "name": "@Neurogine/core-network",
+    "version": "1.0.0",
+    "description": "core network module",
+    "main": "dist/index.js",
+    "module": "dist/index.mjs",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+        "build": "rm -rf dist && tsc",
+        "watch": "tsc --watch",
+        "prepublishOnly": "yarn build",
+        "typescript": "tsc --noEmit",
+        "lint": "ESLINT_USE_FLAT_CONFIG=true eslint . --no-cache",
+        "lint:fix": "ESLINT_USE_FLAT_CONFIG=true eslint . --fix --no-cache",
+        "format": "prettier --write \"src/**/*.{ts,tsx,json,md}\"",
+        "test": "vitest",
+        "test:watch": "vitest --watch",
+        "test:coverage": "vitest --coverage"
+    },
+    "dependencies": {
+        "@eslint/compat": "^2.1.1",
+        "@eslint/js": "^10.0.1",
+        "@react-native/typescript-config": "0.87.1",
+        "@tanstack/react-query": "^5.0.0",
+        "@testing-library/jest-native": "^5.4.3",
+        "@testing-library/react-native": "^14.0.1",
+        "@types/lodash": "^4",
+        "@types/react": "^18.0.0",
+        "@types/react-native": "^0.72.0",
+        "@types/react-test-renderer": "^19",
+        "axios": "^1.7.0",
+        "eslint": "^10.10.0",
+        "eslint-import-resolver-typescript": "^4.4.5",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.1.1",
+        "eslint-plugin-react-native": "^5.0.0",
+        "globals": "^17.12.0",
+        "jest": "^30.5.1",
+        "jiti": "^2.7.0",
+        "prettier": "^3.9.6",
+        "react-native": "^0.87.1",
+        "react-test-renderer": "^19.3.0",
+        "typescript": "^5.0.0",
+        "typescript-eslint": "^8.70.0",
+        "vite": "^8.3.0",
+        "vitest": "^5.0.0",
+        "vitest-react-native": "^0.1.5"
+    },
+    "peerDependencies": {
+        "react": ">=18.0.0",
+        "react-native": "*"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "tsup": "^8.0.0",
+        "typescript": "^5.0.0"
+    }
+}

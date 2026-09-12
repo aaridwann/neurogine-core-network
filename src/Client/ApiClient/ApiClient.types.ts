@@ -1,0 +1,1 @@
+export type TokenGetterTypes = () => Promise<string | null> | string | null;
