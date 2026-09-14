@@ -1,5 +1,5 @@
 const DEFAULT_NETWORK_CONFIG = {
-    baseURL: 'https://api.example.com',
+    baseURL: 'https://dummyjson.com/',
     timeout: 15000,
     headers: {
         'Content-Type': 'application/json',

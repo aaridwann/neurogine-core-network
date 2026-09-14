@@ -5,10 +5,4 @@ export { createQueryKeys } from './query/queryKeys';
 
 export { NetworkProvider } from './Provider/NetworkProvider';
 
-export {
-    useQuery,
-    useMutation,
-    useQueryClient,
-    type UseQueryOptions,
-    type UseMutationOptions,
-} from '@tanstack/react-query';
+export * from '@tanstack/react-query';
