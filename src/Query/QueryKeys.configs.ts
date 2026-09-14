@@ -4,14 +4,14 @@
  * @returns {Object} - Object with all Query Keys
  */
 export const createQueryKeys = <T extends string>(
-    scope: T,
+  scope: T,
 ): Record<string, unknown> => {
-    return {
-        all: [scope] as const,
-        lists: () => [scope, 'list'] as const,
-        list: (filters: Record<string, unknown>) =>
+  return {
+    all: [scope] as const,
+    lists: () => [scope, 'list'] as const,
+    list: (filters: Record<string, unknown>) =>
             [scope, 'list', filters] as const,
-        details: () => [scope, 'detail'] as const,
-        detail: (id: string | number) => [scope, 'detail', id] as const,
-    };
+    details: () => [scope, 'detail'] as const,
+    detail: (id: string | number) => [scope, 'detail', id] as const,
+  };
 };

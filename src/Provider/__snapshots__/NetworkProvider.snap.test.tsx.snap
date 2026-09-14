@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NetworkProvider Snapshot Test should match snapshot with custom query client prop 1`] = `
+<Text>
+  Child Component
+</Text>
+`;
+
+exports[`NetworkProvider Snapshot Test should match snapshot with default shared query client 1`] = `
+<Text>
+  Child Component
+</Text>
+`;

@@ -1,7 +1,7 @@
 export { apiClient, createApiClient, setAuthTokenGetter } from './Client/ApiClient/ApiClient';
 
 export { sharedQueryClient, createQueryClient } from './query/queryClient';
-export { createQueryKeys } from './query/queryKeys';
+export { createQueryKeys } from './Query/QueryKeys.configs';
 
 export { NetworkProvider } from './Provider/NetworkProvider';
 
